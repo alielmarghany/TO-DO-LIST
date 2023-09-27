@@ -1,0 +1,129 @@
+body {
+    font-family: 'DM Sans', Arial, sans-serif; /* Use DM Sans font as the primary font */
+    background-color: #000; /* Change background color to black or dark blue */
+    color: #fff; /* Change text color to white */
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    height: 100vh; /* Make the content take up the full viewport height */
+    margin: 0; /* Remove default margin */
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4; /* Maintain the same box style background color */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Maintain the same box shadow */
+}
+
+/* Other styles remain the same */
+
+
+h1 {
+    text-align: center;
+    color: #000;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 8px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    color: #000;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #000;
+}
+
+.delete-button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Task list item styles */
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.task-item label {
+    flex: 1;
+    margin-left: 10px;
+    word-wrap: break-word;
+}
+
+.checkbox {
+    margin-right: 10px;
+}
+
+/* Existing styles */
+
+/* Add mobile-responsive styles */
+@media (max-width: 600px) {
+    .container {
+        max-width: 100%;
+    }
+
+    .input-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        font-size: 16px; /* Adjust font size for mobile */
+        padding: 10px 15px; /* Adjust padding for mobile, including right padding */
+        box-sizing: border-box; /* Include padding and border in total width */
+    }
+
+    button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .delete-button {
+        padding: 5px 10px; /* Adjust padding for the delete button */
+        width: 30%;
+        font-size: 12px; /* Adjust font size for the delete button */
+    }
+}
+
+/* Dark mode styles */
+/* ... (Same as before) ... */
+
+/* Task list item styles */
+/* ... (Same as before) ... */
